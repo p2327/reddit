@@ -19,7 +19,7 @@ def send_email(html: str) -> None:
     # Set requests params
     request_url = 'https://api.mailgun.net/v3/sandbox5e559bf297f8421bace259e0f7021069.mailgun.org/messages'.format(domain)
     payload = {
-        'from': 'mailgun@sandbox5e559bf297f8421bace259e0f7021069.mailgun.org',
+        'from': 'Jokes Digest <digest@jokes.com>',
         'to': 'pquadro@gmail.com',
         'subject': 'Top posts this week',
         'html': html,
