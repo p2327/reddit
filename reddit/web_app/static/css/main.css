@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 14px/22px 'Helvetica Neue';
 }
 
 .wrapper {
@@ -70,22 +70,24 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #383838;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #383838;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #a0cabc;
 }
 
 .title {
-    color: white;
+    color: #383838;
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
 }
 
 /* ==============
@@ -105,10 +107,10 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
 
-    color: white;
-    background: #e44d26;
+    color: rgb(58, 53, 53);
+    background: #5dc5a2;
 }
 
 nav a:hover,
