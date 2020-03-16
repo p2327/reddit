@@ -1,15 +1,13 @@
-image: "continuumio/miniconda3:latest"
+image: "Python 3.7.6"
 
 before_script:
-    - conda create -n mltools python=3.6
-    - source activate mltools
-    - python setup.py install
-
+    - python --version
+    - pip install -r requirements.txt
 
 stages:
-    - test
+    - Scrape and email
 
-test:
-    stage: test
+run_app:
+    stage: Scrape and email
     script:
-        - pytest 
+        - python app.py 
