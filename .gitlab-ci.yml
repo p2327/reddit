@@ -1,0 +1,15 @@
+image: "continuumio/miniconda3:latest"
+
+before_script:
+    - conda create -n mltools python=3.6
+    - source activate mltools
+    - python setup.py install
+
+
+stages:
+    - test
+
+test:
+    stage: test
+    script:
+        - pytest 

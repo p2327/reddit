@@ -76,7 +76,7 @@ config = configparser.ConfigParser()
 config.read(os.path.join(
     os.path.abspath(os.path.dirname(__file__)), 'settings.cfg')
     )
-mlab_uri = config.get('MongoDB', 'MONGO_URI')
+MONGO_URI = config.get('MongoDB', 'MONGO_URI')
 MONGO_DATABASE = 'paws-sandbox'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

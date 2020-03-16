@@ -14,6 +14,7 @@ if __name__ == '__main__':
     logger = logging.getLogger(__name__)
 
     # Run on Sundays
+    # %A is full weekday name
     if date.strftime(date.today(), '%A').lower() == 'sunday':
         process = CrawlerProcess(get_project_settings())
         process.crawl(PostSpider)
