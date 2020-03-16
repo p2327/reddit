@@ -12,4 +12,4 @@
 .vscode
 __pycache__
 .eggs
-settings.cfg
+#settings.cfg
