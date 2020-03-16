@@ -71,12 +71,12 @@ ITEM_PIPELINES = {
     'reddit.pipelines.MongoPipeline': 300,
 }
 #MONGO_URI = 'mongodb+srv://pete:d71RZ9Xu46NkPxL7@paws-sandbox-gdqa2.mongodb.net/test?retryWrites=true&w=majority'
-#MONGO_URI = 'mongodb+srv://pete:d71RZ9Xu46NkPxL7@paws-sandbox-gdqa2.mongodb.net/paws-sandbox?ssl=true&ssl_cert_reqs=CERT_NONE'
-config = configparser.ConfigParser()
-config.read(os.path.join(
-    os.path.abspath(os.path.dirname(__file__)), 'settings.cfg')
-    )
-MONGO_URI = config.get('MongoDB', 'MONGO_URI')
+MONGO_URI = 'mongodb+srv://pete:d71RZ9Xu46NkPxL7@paws-sandbox-gdqa2.mongodb.net/paws-sandbox?ssl=true&ssl_cert_reqs=CERT_NONE'
+#config = configparser.ConfigParser()
+#config.read(os.path.join(
+#    os.path.abspath(os.path.dirname(__file__)), 'settings.cfg')
+#    )
+#MONGO_URI = config.get('MongoDB', 'MONGO_URI')
 MONGO_DATABASE = 'paws-sandbox'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
